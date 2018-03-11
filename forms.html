@@ -11,26 +11,26 @@
 <body>
     <h1>Register</h1>
     <form action="Registstration.php" method="GET" name="Personal registration">
-        <label for="First Name">First Name</label>
-        <input id="First Name" type="text" placeholder="John" required>
+        <label for="first">First Name</label>
+        <input id="first" type="text" placeholder="John" required>
 
-        <label for="Last Name">Last Name</label>
-        <input id="Last Name" type="text" placeholder="Smith" required> <br>
+        <label for="last">Last Name</label>
+        <input id="last" type="text" placeholder="Smith" required> <br>
 
-        <label for="Male">Male</label>
-        <input type="radio" name="genderChoise" id="Male" value="male">
+        <label for="male">Male</label>
+        <input type="radio" name="genderChoise" id="male" value="male">
 
-        <label for="Female">Female</label>
+        <label for="female">Female</label>
         <input type="radio" name="genderChoise" id="female" value="female">
 
-        <label for="Other">Other</label>
+        <label for="other">Other</label>
         <input type="radio" name="genderChoise" id="other" value="other">
         <br>
         <label for="Email">Email:</label>
-        <input type="email" id="Email" placeholder="email" name="email" required>
+        <input type="email" id="Email" placeholder="your email" name="email" required>
 
         <label for="password">Password:</label>
-        <input type="password" name="password" id="password" maxlength="10" minlength="5" required>
+        <input type="password" name="password" id="password" pattern=".{5.10}" required title="Password must be between 5 and 10 characters">
         <br>
         <label for="birthday">Birthday: </label>
         <select name="mounth" id="birthday">
@@ -54,8 +54,8 @@
                     <option value="2017-2018">2017-2018</option>
                 </select>
         <br>
-        <label for="agree">I agree to the terms and conditions</label>
-        <input type="checkbox" name="agree with.." id="agree">
+        <label for="agreed">I agree to the terms and conditions</label>
+        <input type="checkbox" name="agreed" id="agree">
 
         <br>
         <button>Submit</button>
